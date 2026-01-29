@@ -41,19 +41,17 @@ int read_range(int low, int high);
 int main(void) {
     printf("Let's play!\n");
 
-    int hasATie = 0;
-    do {
+    for (int i = 0; i < 3; i++) {
         printf("Roll a die and enter your result.\n");
         int userNumber = read_range(DICE_MIN, DICE_MAX);
 
         if (userNumber == 6) {
             printf("I got 6. It is a tie!\n");
-            hasATie = 1;
 
         } else {
             printf("I got %d. I win!\n", userNumber + 1);
         }
-    } while (!hasATie);
+    }
 
     printf("Better luck next time. Bye!\n");
 
