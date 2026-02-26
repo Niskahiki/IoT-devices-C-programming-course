@@ -88,7 +88,7 @@ int count_words(const char *str, const char *word) {
 
 void read_user_input(char *string, int string_size) {
     if (fgets(string, string_size, stdin) == NULL) {
-        string[0] == '\0';
+        string[0] = '\0';
     }
 }
 
